@@ -1,10 +1,8 @@
-# Flutter Metal Cube
+# Flutter Metal Texture Video Stream
 
-Test project for rendering native Metal graphics displayed within the Flutter Texture Widget.
-Renders a simple animated cube to a metal texture, which is then registered to the Flutter Texture registry.
-Each time the contents of the texture are updated, the Flutter Texture Widget is notified and updated.
+An attempt to combine a [Flutter Metal Texture Rendering Sample](https://github.com/Sakari369/FlutterMetalCubeTextureWidget) with a [minimal-overhead iOS camera Sample](https://github.com/alexstaravoitau/MetalRenderCamera). I was unsuccessful with my attempt and need to move on to preserve velocity. So I have decided to implement our application in pure Swift for iOS deployment, which was initially deferred to try to reduce the migration shock. 
 
-https://user-images.githubusercontent.com/1212726/217334427-45e95b75-c0b2-481c-9b07-9ca543fb2ff6.mp4
+If you figure out how to get it working, make a PR so that the community can use it!
 
 ## Running
 
@@ -14,8 +12,3 @@ Works on macOS and iOS targets.
 flutter pub get
 flutter run
 ```
-
-## Jank issues on Flutter < 3.8
-
-As of current moment, with Flutter 3.7.1 there is noticeable jank with the Flutter Texture Widget.
-Updating to the master branch fixed this issue.
